@@ -1,0 +1,52 @@
+{
+  "name": "nounicode",
+  "version": "1.0.4",
+  "description": "A Utility to validate and enforce ASCII-only strings (modern, extended, or standard ASCII) in JavaScript/TypeScript.",
+  "license": "MIT",
+  "homepage": "https://docs.cloudnist.com/nounicode",
+  "bugs": {
+    "url": "https://github.com/cloudnist/nounicode/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cloudnist/nounicode.git"
+  },
+  "sideEffects": false,
+  "author": "Cloudnist",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "keywords": [
+    "nounicode",
+    "ascii",
+    "unicode",
+    "validation",
+    "string-utils",
+    "text-processing",
+    "typescript",
+    "javascript"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.1",
+    "tsdown": "^0.15.2",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}
